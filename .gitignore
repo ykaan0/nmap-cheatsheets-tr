@@ -1,0 +1,21 @@
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
+
+# Düzenleyici ve IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Geçici tarama çıktıları ve loglar
+*.nmap
+*.xml
+*.gnmap
+scan_results*
+audit_raporu*
+nmap_reports_*
+*.log
+
+# Docker
+.docker/

@@ -1,0 +1,14 @@
+services:
+  nmap-cheatsheet:
+    build: .
+    container_name: nmap_cheatsheet_web
+    restart: unless-stopped
+    ports:
+      - "8088:80"
+    volumes:
+      - ./docs:/usr/share/nginx/html/docs:ro
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./style.css:/usr/share/nginx/html/style.css:ro
+      - ./app.js:/usr/share/nginx/html/app.js:ro
+    environment:
+      - NODE_ENV=production
